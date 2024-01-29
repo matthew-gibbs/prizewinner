@@ -1,0 +1,23 @@
+{
+  "name": "prizewinner",
+  "version": "1.0.0",
+  "description": "Development tools for the Bauer Prizewinner Portal POC",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded web/assets/scss:web/assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed web/assets/scss:web/assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthew-gibbs/prizewinner.git"
+  },
+  "author": "Matthew Gibbs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthew-gibbs/prizewinner/issues"
+  },
+  "homepage": "https://github.com/matthew-gibbs/prizewinner#readme",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}
