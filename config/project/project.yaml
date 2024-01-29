@@ -1,0 +1,22 @@
+dateModified: 1706538262
+email:
+  fromEmail: matthew.gibbs@bauermedia.co.uk
+  fromName: 'Bauer Prizewinner Portal'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    8f08789b-8fbb-40f2-a356-10c734e88c45: 'Bauer Prizewinner Portal' # Bauer Prizewinner Portal
+    42a85563-6a92-4a97-afc6-4ef7eb487d3f: Common # Common
+    9696553d-7ceb-427f-b219-6203ce3b21a3: 'Bauer Prizewinner Portal' # Bauer Prizewinner Portal
+system:
+  edition: solo
+  live: true
+  name: 'Bauer Prizewinner Portal'
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
