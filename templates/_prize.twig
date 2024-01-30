@@ -6,10 +6,32 @@
 
 {% switch prizeType %}
   {% case 'eventTickets' %}
-      <h1>Prize!</h1>
-      {{ entry.uri }}
-      {{ entry.title }}
-      {{ prizeType }}
+    {% set prizeImage = entry.prizeImage.one() %}
+    <div class="grid prize">
+      <div class="prize__header">
+        <h1>Track Your Prize!</h1>
+        <span class="prize__id">Prize ID: {{ entry.uid }}</span>
+      </div>
+
+      <div class="prize-info">
+        {% if prizeImage %}
+        {% do prizeImage.setTransform('prizeImageTransformation') %}
+        <div class="prize-info__image">
+          <img src="{{ prizeImage.url }}"
+            width="{{ prizeImage.width / 2 }}"
+            height="{{ prizeImage.height / 2 }}"
+            alt="{{ prizeImage.alt }}" />
+        </div>  
+        {% endif %}
+        <div class="prize-info__content">
+          <h2>{{ entry.title }}</h2>
+          {% if entry.prizeSubtitle %}
+          <h3>{{ entry.prizeSubtitle }}</h3>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
     
   {% default %}
       <h1>{{ prizeType }} Page not made yet</h1>
