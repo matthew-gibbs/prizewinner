@@ -8,6 +8,7 @@
   color: white;
 }
 
+
 // Header 
 .header {
   &__logo {
@@ -20,4 +21,14 @@
       height: auto;
     }
   }
+}
+
+// Footer 
+.footer {
+  font-family: var(--font--bauer);
+}
+
+// Body Generic
+body {
+  font-family: var(--font--bauer);
 }

@@ -12,6 +12,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 16px;
 }
 
 /* Sections
@@ -311,6 +312,42 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Bauer Media Sans";
+  src: url("../typefaces/bauermediasans-bold-webfont.woff2") format("woff2"), url("../typefaces/bauermediasans-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bauer Media Sans";
+  src: url("../typefaces/bauermediasans-bolditalic-webfont.woff2") format("woff2"), url("../typefaces/bauermediasans-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Bauer Media Sans";
+  src: url("../typefaces/bauermediasans-light-webfont.woff2") format("woff2"), url("../typefaces/bauermediasans-light-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bauer Media Sans";
+  src: url("../typefaces/bauermediasans-lightitalic-webfont.woff2") format("woff2"), url("../typefaces/bauermediasans-lightitalic-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Bauer Media Sans";
+  src: url("../typefaces/bauermediasans-regular-webfont.woff2") format("woff2"), url("../typefaces/bauermediasans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bauer Media Sans";
+  src: url("../typefaces/bauermediasans-regularitalic-webfont.woff2") format("woff2"), url("../typefaces/bauermediasans-regularitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
 :root {
   --color-purple-bauer: #4700A3;
   --color-mint--light: #BEFAEB;
@@ -334,6 +371,7 @@ template {
   --mobile--large: 500px;
   --tablet: 760px;
   --max-width: 1160px;
+  --font--bauer: "Bauer Media Sans" ;
 }
 
 .grid {
@@ -369,6 +407,14 @@ template {
 .header__logo svg {
   width: 100%;
   height: auto;
+}
+
+.footer {
+  font-family: var(--font--bauer);
+}
+
+body {
+  font-family: var(--font--bauer);
 }
 
 /*# sourceMappingURL=main.css.map */
