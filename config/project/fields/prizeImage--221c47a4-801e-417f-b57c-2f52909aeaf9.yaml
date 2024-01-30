@@ -1,0 +1,37 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: cfeacee4-e635-4538-b401-e51f25757d68 # Prizes
+handle: prizeImage
+instructions: 'Optional image of the won item. For example, for gig tickets, you could use the artist. '
+name: 'Prize Image'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  branchLimit: null
+  defaultUploadLocationSource: 'volume:89f1607e-6651-4bc8-83e0-aaab5f742e49' # Prize Images
+  defaultUploadLocationSubpath: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:89f1607e-6651-4bc8-83e0-aaab5f742e49' # Prize Images
+  restrictedLocationSubpath: null
+  selectionLabel: 'Choose image...'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,7 +1,8 @@
 baseUrl: $PRIMARY_SITE_URL
+enabled: true
 handle: default
 hasUrls: true
-language: en-US
+language: en
 name: 'Bauer Prizewinner Portal'
 primary: true
 siteGroup: 9696553d-7ceb-427f-b219-6203ce3b21a3 # Bauer Prizewinner Portal

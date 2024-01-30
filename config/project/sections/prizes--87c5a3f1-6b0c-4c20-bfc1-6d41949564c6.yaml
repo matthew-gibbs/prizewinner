@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: prizes
+name: Prizes
+propagationMethod: all
+siteSettings:
+  8f08789b-8fbb-40f2-a356-10c734e88c45: # Bauer Prizewinner Portal
+    enabledByDefault: true
+    hasUrls: true
+    template: _prize.twig
+    uriFormat: 'prizes/{uid}'
+type: channel

@@ -1,0 +1,14 @@
+columnSuffix: tezhmiys
+contentColumnType: boolean
+fieldGroup: add9492e-039a-4123-9743-52385ce5f8bf # Statuses
+handle: hasShipped
+instructions: 'When the tickets have been shipped, mark this switch as true. If you have a tracking code, then provide it below and the winner will be able to see it.'
+name: 'Has Shipped?'
+searchable: false
+settings:
+  default: false
+  offLabel: 'No '
+  onLabel: 'Yes'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

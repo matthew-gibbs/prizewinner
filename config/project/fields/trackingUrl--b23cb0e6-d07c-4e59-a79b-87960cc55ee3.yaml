@@ -1,0 +1,14 @@
+columnSuffix: hhwrfhkm
+contentColumnType: string(255)
+fieldGroup: add9492e-039a-4123-9743-52385ce5f8bf # Statuses
+handle: trackingUrl
+instructions: 'Link to track the prize (if available)'
+name: 'Tracking URL'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

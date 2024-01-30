@@ -1,0 +1,12 @@
+columnSuffix: jdjlpllw
+contentColumnType: string
+fieldGroup: cfeacee4-e635-4538-b401-e51f25757d68 # Prizes
+handle: winnerPhoneNumber
+instructions: 'To allow the user to find their prize from the homepage.'
+name: 'Winner Phone Number'
+searchable: false
+settings:
+  defaultRegion: GB
+translationKeyFormat: null
+translationMethod: none
+type: rynpsc\phonenumber\fields\PhoneNumberField

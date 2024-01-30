@@ -1,0 +1,17 @@
+columnSuffix: colipdjq
+contentColumnType: datetime
+fieldGroup: add9492e-039a-4123-9743-52385ce5f8bf # Statuses
+handle: shippedDate
+instructions: null
+name: 'Shipped Date'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

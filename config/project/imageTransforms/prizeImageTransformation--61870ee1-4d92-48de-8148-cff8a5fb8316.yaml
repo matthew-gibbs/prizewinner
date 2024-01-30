@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: prizeImageTransformation
+height: 360
+interlace: none
+mode: crop
+name: 'Prize Image Transformation'
+position: center-center
+quality: 80
+upscale: true
+width: 640

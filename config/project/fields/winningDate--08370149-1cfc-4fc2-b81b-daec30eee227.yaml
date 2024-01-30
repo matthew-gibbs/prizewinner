@@ -1,0 +1,17 @@
+columnSuffix: symixaqr
+contentColumnType: datetime
+fieldGroup: cfeacee4-e635-4538-b401-e51f25757d68 # Prizes
+handle: winningDate
+instructions: 'When the winner won their prize.'
+name: 'Winning Date'
+searchable: false
+settings:
+  max: null
+  min: '2024-01-01T00:00:00+00:00'
+  minuteIncrement: 30
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

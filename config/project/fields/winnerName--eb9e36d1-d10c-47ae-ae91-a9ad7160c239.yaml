@@ -1,0 +1,19 @@
+columnSuffix: ttuwvbwo
+contentColumnType: text
+fieldGroup: cfeacee4-e635-4538-b401-e51f25757d68 # Prizes
+handle: winnerName
+instructions: null
+name: 'Winner Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

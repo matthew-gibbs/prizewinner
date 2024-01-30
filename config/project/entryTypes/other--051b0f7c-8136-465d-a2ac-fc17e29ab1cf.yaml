@@ -1,0 +1,47 @@
+fieldLayouts:
+  c5c2039b-1a47-428c-80fa-c0674dd43475:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3f124f65-f832-4b6f-9306-332935933adb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bdcec110-0fee-4aac-9aba-3c4e63a7239c
+        userCondition: null
+handle: other
+hasTitleField: true
+name: 'Other '
+section: 87c5a3f1-6b0c-4c20-bfc1-6d41949564c6 # Prizes
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 6
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

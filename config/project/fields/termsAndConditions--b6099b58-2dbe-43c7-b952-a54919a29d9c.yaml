@@ -1,0 +1,27 @@
+columnSuffix: lweymoux
+contentColumnType: text
+fieldGroup: cfeacee4-e635-4538-b401-e51f25757d68 # Prizes
+handle: termsAndConditions
+instructions: 'Longer detailed wording of and terms and conditions, and specific prize wording. Will display in a modal to the user so can be longer. '
+name: 'Terms and Conditions'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: manual
+  defaultTransform: ''
+  manualConfig: "{\r\n  \"buttons\": [\"bold\", \"italic\", \"lists\", \"link\"],\r\n  \"plugins\": [\"fullscreen\"]\r\n}"
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

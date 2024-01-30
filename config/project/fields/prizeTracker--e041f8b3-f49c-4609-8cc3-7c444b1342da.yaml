@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: cfeacee4-e635-4538-b401-e51f25757d68 # Prizes
+handle: prizeTracker
+instructions: 'Tracker to show the winner the current status of their prize. These steps will all show as inactive after the winning date. As they are marked as complete, they will show as active to the winner. When all steps are complete, the page will show that the prize was delivered. '
+name: 'Prize Tracker '
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_prizetracker}}'
+  maxBlocks: null
+  minBlocks: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

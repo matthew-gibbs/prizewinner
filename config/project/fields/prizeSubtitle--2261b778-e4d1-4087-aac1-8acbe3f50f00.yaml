@@ -1,0 +1,19 @@
+columnSuffix: rggckpue
+contentColumnType: string(600)
+fieldGroup: cfeacee4-e635-4538-b401-e51f25757d68 # Prizes
+handle: prizeSubtitle
+instructions: 'A short sentence to display directly below the title - could include details like the time and date of the performance, or number of tickets / prizes.'
+name: 'Prize Subtitle'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 150
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

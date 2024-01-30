@@ -1,0 +1,47 @@
+fieldLayouts:
+  d6a10229-c3b9-4949-92f9-6efdb2a957fb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1e784a84-3cb6-4bf1-8309-f86d59673b07
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ff382552-6c3a-4601-99a2-5cd92e03daf3
+        userCondition: null
+handle: cash
+hasTitleField: true
+name: Cash
+section: 87c5a3f1-6b0c-4c20-bfc1-6d41949564c6 # Prizes
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

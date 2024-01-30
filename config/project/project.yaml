@@ -1,19 +1,82 @@
-dateModified: 1706538262
+dateModified: 1706630886
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:87c5a3f1-6b0c-4c20-bfc1-6d41949564c6' # Prizes
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+        - type
+      type: native
 email:
   fromEmail: matthew.gibbs@bauermedia.co.uk
   fromName: 'Bauer Prizewinner Portal'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  siteAssets:
+    hasUrls: true
+    name: Assets
+    settings:
+      path: '@webroot/assets/uploads'
+    type: craft\fs\Local
+    url: '@web/assets/uploads/'
 meta:
   __names__:
+    0c9c28ce-340e-4fb9-bf35-f198021e168b: 'Winner Phone Number' # Winner Phone Number
+    01f724d5-7907-4f22-853c-9be2cf7a352c: 'Event Tickets' # Event Tickets
+    5b5daf30-66ef-4107-8469-6755e10701e0: 'Tracker Step' # Tracker Step
     8f08789b-8fbb-40f2-a356-10c734e88c45: 'Bauer Prizewinner Portal' # Bauer Prizewinner Portal
     42a85563-6a92-4a97-afc6-4ef7eb487d3f: Common # Common
+    051b0f7c-8136-465d-a2ac-fc17e29ab1cf: 'Other ' # Other 
+    87c5a3f1-6b0c-4c20-bfc1-6d41949564c6: Prizes # Prizes
+    89f1607e-6651-4bc8-83e0-aaab5f742e49: 'Prize Images' # Prize Images
+    091b6b83-dffb-4fa7-b468-cd9256d0cbce: 'Has Shipped?' # Has Shipped?
+    221c47a4-801e-417f-b57c-2f52909aeaf9: 'Prize Image' # Prize Image
+    2261b778-e4d1-4087-aac1-8acbe3f50f00: 'Prize Subtitle' # Prize Subtitle
+    61870ee1-4d92-48de-8148-cff8a5fb8316: 'Prize Image Transformation' # Prize Image Transformation
+    08370149-1cfc-4fc2-b81b-daec30eee227: 'Winning Date' # Winning Date
     9696553d-7ceb-427f-b219-6203ce3b21a3: 'Bauer Prizewinner Portal' # Bauer Prizewinner Portal
+    a078ffa1-ce84-4aa2-9b13-2aab9b3f00ad: 'Step Title' # Step Title
+    add9492e-039a-4123-9743-52385ce5f8bf: Statuses # Statuses
+    ae846c32-62f4-44c6-b0d8-684b675fc667: Date # Date
+    b23cb0e6-d07c-4e59-a79b-87960cc55ee3: 'Tracking URL' # Tracking URL
+    b6099b58-2dbe-43c7-b952-a54919a29d9c: 'Terms and Conditions' # Terms and Conditions
+    c175fb6f-2553-444e-9372-083fbfe14a9b: 'Meet and Greet' # Meet and Greet
+    c6376d01-50c9-4e5d-90b4-16f9db1371bc: 'Is Complete?' # Is Complete?
+    cb78c71f-c054-4cec-96bd-b2dc8fc6d154: Cash # Cash
+    cfeacee4-e635-4538-b401-e51f25757d68: Prizes # Prizes
+    e041f8b3-f49c-4609-8cc3-7c444b1342da: 'Prize Tracker ' # Prize Tracker 
+    e51e3ffd-81a1-40d4-95d5-8a0a103603d7: 'Product (e.g. Headphones)' # Product (e.g. Headphones)
+    eb9e36d1-d10c-47ae-ae91-a9ad7160c239: 'Winner Name' # Winner Name
+    eb29637f-799f-41e5-b0f7-5f6b898fe22e: 'Shipped Date' # Shipped Date
+    f540a0ab-c140-4177-b490-6ea6f0fc8b72: 'Gift Card' # Gift Card
+plugins:
+  phone-number:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true
   name: 'Bauer Prizewinner Portal'
+  retryDuration: null
   schemaVersion: 4.5.3.0
-  timeZone: America/Los_Angeles
+  timeZone: Europe/London
 users:
   allowPublicRegistration: false
   defaultGroup: null
