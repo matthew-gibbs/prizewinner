@@ -5,6 +5,10 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -346,6 +350,25 @@ template {
     grid-column-gap: 20px;
     margin: 0 auto;
   }
+}
+
+.header,
+.footer {
+  background-color: var(--color-purple-bauer);
+  width: 100vw;
+  display: block;
+  padding: 1rem;
+  color: white;
+}
+
+.header__logo {
+  max-width: 8rem;
+  height: auto;
+  margin: 0 auto;
+}
+.header__logo svg {
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

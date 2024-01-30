@@ -1,7 +1,20 @@
 {% extends "_layout" %}
+
+{% set prizeType = entry.type %}
+
 {% block content %}
-    <h1>Prize!</h1>
-    {{ entry.uri }}
-    {{ entry.title }}
+
+{% switch prizeType %}
+  {% case 'eventTickets' %}
+      <h1>Prize!</h1>
+      {{ entry.uri }}
+      {{ entry.title }}
+      {{ prizeType }}
+    
+  {% default %}
+      <h1>{{ prizeType }} Page not made yet</h1>
+    
+{% endswitch %}
 
 {% endblock %}
+

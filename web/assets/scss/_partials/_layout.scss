@@ -1,0 +1,23 @@
+// Header and Footer
+.header,
+.footer {
+  background-color: var(--color-purple-bauer);
+  width: 100vw;
+  display: block;
+  padding: 1rem;
+  color: white;
+}
+
+// Header 
+.header {
+  &__logo {
+    max-width: 8rem;
+    height: auto;
+    margin: 0 auto;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
