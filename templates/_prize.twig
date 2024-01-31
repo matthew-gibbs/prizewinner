@@ -36,7 +36,43 @@
           {% endif %}
         </div>
       </div>
+    </div>
 
+    <div class="timeline">
+      {% set today = "now"|date("U") %}
+      {% set shipped =  entry.shippedDate|date("U") %}
+      {% set delivered = entry.shippedDate|date_modify("+7 day")|date("U") %}
+
+      {% if shipped %} 
+      {% set shippedClass = "active" %}
+      {% endif %}
+
+      {% if today > delivered %}
+        Delivered
+        {% set shippedClass = "complete" %}
+        {% set deliveredClass = "complete" %}
+        {% set gigClass = "active" %}
+      {% else %}
+        {% set shippedClass = "" %}
+        {% set deliveredClass = "" %}
+        {% set gigClass = "" %}
+      {% endif %}
+      
+      <div class="step {{ shipped ? "complete" : "active" }}">
+        <h4 class="step__heading">You Won!</h4>
+        <p class="step__date">{{ entry.winningDate | date("d F") }} </p>
+      </div>
+      <div class="step {{ shippedClass }}">
+        <h4 class="step__heading">Shipped</h4>
+        <p class="step__date">{{ entry.shippedDate | date("d F") }} </p>
+      </div>
+      <div class="step {{ deliveredClass }}">
+        <h4 class="step__heading">Delivered</h4>
+        <p class="step__date">{{ delivered | date("d F") }} </p>
+      </div>
+      <div class="step {{ gigClass }}">
+        <h4 class="step__heading">Time for the gig!</h4>
+      </div>
     </div>
     
   {% default %}
