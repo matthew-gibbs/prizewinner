@@ -350,6 +350,7 @@ template {
 }
 :root {
   --color-purple-bauer: #4700A3;
+  --color-background: #F8F3FF;
   --color-mint--light: #BEFAEB;
   --color-mint--mid: #1FD1BD;
   --color-mint--dark: #009392;
@@ -395,7 +396,7 @@ template {
   background-color: var(--color-purple-bauer);
   width: 100vw;
   display: block;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
   color: white;
 }
 
@@ -415,6 +416,102 @@ template {
 
 body {
   font-family: var(--font--bauer);
+  background-color: var(--color-background);
+}
+
+.prize__header {
+  background-color: var(--color-purple-bauer);
+  color: white;
+  text-align: center;
+  padding: 0 1rem 10rem;
+  overflow: auto;
+}
+.prize__header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.prize-info {
+  padding: 0 1rem 5rem;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-width: 40rem;
+  position: relative;
+  overflow: hidden;
+  margin: -8rem auto 2rem;
+}
+.prize-info__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.prize-info__content {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 40rem;
+  width: calc(100% - 2rem);
+  padding: 0.5rem;
+  background-color: var(--color-lemon--mid);
+  border-radius: 0 0 5px 5px;
+  bottom: 0;
+}
+.prize-info__content h2,
+.prize-info__content h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--color-purple-bauer);
+}
+.prize-info__content h3 {
+  font-weight: normal;
+  margin-top: 0.25rem;
+}
+.prize-info__modal-trigger {
+  background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.41525 16.796C5.11575 18.2162 7.277 19 9.5 19C14.7392 19 19 14.7392 19 9.5C19 4.26075 14.7392 0 9.5 0C4.26075 0 0 4.26075 0 9.5C0 11.2812 0.49875 13.015 1.4345 14.5208C1.57225 14.744 1.86675 14.8105 2.09 14.6727C2.31325 14.5302 2.37975 14.2405 2.242 14.0172C1.3965 12.6682 0.95 11.1055 0.95 9.5C0.95 4.78325 4.78325 0.95 9.5 0.95C14.2168 0.95 18.05 4.788 18.05 9.5C18.05 14.212 14.2168 18.05 9.5 18.05C7.50025 18.05 5.5575 17.3422 4.02325 16.0645C3.819 15.8982 3.51975 15.922 3.3535 16.1262C3.18725 16.3305 3.21575 16.6297 3.41525 16.796ZM9.50002 6.175C8.45027 6.175 7.60002 5.32475 7.60002 4.275C7.60002 3.22525 8.45027 2.375 9.50002 2.375C10.5498 2.375 11.4 3.22525 11.4 4.275C11.4 5.32475 10.5498 6.175 9.50002 6.175ZM9.50002 3.325C8.97752 3.325 8.55002 3.7525 8.55002 4.275C8.55002 4.7975 8.97752 5.225 9.50002 5.225C10.0225 5.225 10.45 4.7975 10.45 4.275C10.45 3.7525 10.0225 3.325 9.50002 3.325ZM9.50002 16.625C8.45027 16.625 7.60002 15.7747 7.60002 14.725V9.025C7.60002 7.97525 8.45027 7.125 9.50002 7.125C10.5498 7.125 11.4 7.97525 11.4 9.025V14.725C11.4 15.7747 10.5498 16.625 9.50002 16.625ZM9.50002 8.075C8.97752 8.075 8.55002 8.5025 8.55002 9.025V14.725C8.55002 15.2475 8.97752 15.675 9.50002 15.675C10.0225 15.675 10.45 15.2475 10.45 14.725V9.025C10.45 8.5025 10.0225 8.075 9.50002 8.075Z' fill='%234700A3'/%3E%3C/svg%3E%0A");
+  background-position: center 0.25rem;
+  background-repeat: no-repeat;
+  appearance: none;
+  background-color: var(--color-lemon--mid);
+  padding: 1.5rem 0.25rem 0.25rem 0.25rem;
+  color: var(--color-purple-bauer);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+.prize-info__modal-trigger:hover {
+  background-color: var(--color-lemon--dark);
+}
+
+dialog {
+  max-width: 40rem;
+  border-radius: 10px;
+  border: none;
+  width: calc(100% - 2rem);
+  overflow: visible;
+  transition: all 0.5s;
+}
+dialog h1 {
+  margin-top: 0;
+}
+
+::backdrop {
+  background-image: linear-gradient(45deg, black, black, black);
+  opacity: 0.75;
+}
+
+.dialog__close {
+  background-color: var(--color-purple-bauer);
+  color: white;
+  border-radius: 100px;
+  margin: -2rem 0 0 auto;
+  border: none;
+  appearance: none;
+  display: block;
+  padding: 0.5rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
