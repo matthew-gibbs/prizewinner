@@ -394,7 +394,7 @@ template {
 .header,
 .footer {
   background-color: var(--color-purple-bauer);
-  width: 100vw;
+  width: 100%;
   display: block;
   padding: 1rem 1rem 0 1rem;
   color: white;
@@ -628,6 +628,59 @@ dialog h1 {
   animation-name: blinker;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+
+.contact {
+  width: calc(100% - 2rem);
+  max-width: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 0 auto 1rem;
+  background-color: var(--color-purple-bauer);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.contact__content {
+  color: white;
+}
+.contact__content h4 {
+  color: var(--color-lemon--mid);
+  margin: 0.5rem 0 0;
+}
+.contact__content p {
+  margin-top: 0.5rem;
+}
+.contact__icon {
+  min-width: 4rem;
+  height: auto;
+  margin-right: 1rem;
+}
+.contact__button {
+  color: var(--color-purple-bauer);
+  background-color: white;
+  position: relative;
+  padding: 0.5rem 1.5rem 0.5rem 0.5rem;
+  border: 1px solid var(--color-purple-bauer);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+.contact__button:after {
+  content: "";
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='10' viewBox='0 0 8 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.13397C8.16667 4.51888 8.16667 5.48113 7.5 5.86603L1.5 9.33013C0.833334 9.71503 5.06336e-07 9.2339 5.39985e-07 8.4641L8.42827e-07 1.5359C8.76476e-07 0.766098 0.833334 0.284973 1.5 0.669873L7.5 4.13397Z' fill='%234700A3'/%3E%3C/svg%3E%0A");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+.contact__button:hover {
+  background-color: var(--color-lavender--light);
 }
 
 /*# sourceMappingURL=main.css.map */

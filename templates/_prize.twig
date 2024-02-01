@@ -83,6 +83,8 @@
       <span class="timeline__last-updated">Last updated: {{ entry.dateUpdated|datetime }}</span>
     </div>
 
+    {% include '_includes/_contactBlock.twig' with {'prizeId': entry.uid} %}
+
     
   {% default %}
       <h1>{{ prizeType }} Page not made yet</h1>
