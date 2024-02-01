@@ -39,41 +39,50 @@
     </div>
 
     <div class="timeline">
-      {% set today = "now"|date("U") %}
-      {% set shipped =  entry.shippedDate|date("U") %}
-      {% set delivered = entry.shippedDate|date_modify("+7 day")|date("U") %}
+      {% set shippedClass = "" %}
+      {% set deliveredClass = "" %}
+      {% set eventClass = "" %}
+      {% set todaysDate = "now"|date("U") %}
+      {% set estDeliveredDate = entry.shippedDate|date_modify("+7 day")|date("U") %}
 
-      {% if shipped %} 
+      {% if entry.hasShipped %} 
       {% set shippedClass = "active" %}
       {% endif %}
 
-      {% if today > delivered %}
+      {% if todaysDate > estDeliveredDate %}
         Delivered
         {% set shippedClass = "complete" %}
         {% set deliveredClass = "complete" %}
-        {% set gigClass = "active" %}
-      {% else %}
-        {% set shippedClass = "" %}
-        {% set deliveredClass = "" %}
-        {% set gigClass = "" %}
+        {% set eventClass = "active" %}
       {% endif %}
       
-      <div class="step {{ shipped ? "complete" : "active" }}">
+      <div class="step {{ entry.hasShipped ? "complete" : "active" }}">
         <h4 class="step__heading">You Won!</h4>
         <p class="step__date">{{ entry.winningDate | date("d F") }} </p>
       </div>
-      <div class="step {{ shippedClass }}">
+      <div class="step {{ entry.trackingUrl ? "has-link" : "" }} {{ shippedClass }} ">
         <h4 class="step__heading">Shipped</h4>
-        <p class="step__date">{{ entry.shippedDate | date("d F") }} </p>
+        {% if entry.shippedDate is not empty %}
+        <p class="step__date">{{ entry.shippedDate | date("d F, g:ia") }} </p>
+        {% endif %}
+        {% if entry.trackingUrl is not empty and entry.hasShipped %}
+        <a class="step__tracking-link" href="{{ entry.trackingUrl }}" target="_blank">Track</a>
+        {% endif %}
       </div>
       <div class="step {{ deliveredClass }}">
         <h4 class="step__heading">Delivered</h4>
-        <p class="step__date">{{ delivered | date("d F") }} </p>
+        <p class="step__date">{{ estDeliveredDate | date("d F") }} </p>
       </div>
-      <div class="step {{ gigClass }}">
-        <h4 class="step__heading">Time for the gig!</h4>
+      <div class="step event {{ eventClass }}">
+        <h4 class="step__heading">Get ready to go!</h4>
+        {% if entry.eventDate is not empty %}
+        <p class="step__date">{{ entry.eventDate | date("d F") }} </p>
+        {% endif %}
       </div>
+
+      <span class="timeline__last-updated">Last updated: {{ entry.dateUpdated|datetime }}</span>
     </div>
+
     
   {% default %}
       <h1>{{ prizeType }} Page not made yet</h1>

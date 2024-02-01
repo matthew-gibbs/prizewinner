@@ -1,4 +1,4 @@
-dateModified: 1706630886
+dateModified: 1706784539
 elementSources:
   craft\elements\Entry:
     -
@@ -61,6 +61,7 @@ meta:
     eb9e36d1-d10c-47ae-ae91-a9ad7160c239: 'Winner Name' # Winner Name
     eb29637f-799f-41e5-b0f7-5f6b898fe22e: 'Shipped Date' # Shipped Date
     f540a0ab-c140-4177-b490-6ea6f0fc8b72: 'Gift Card' # Gift Card
+    fe7bff52-aedb-42a4-833b-c79a6d6e7399: 'Event Date' # Event Date
 plugins:
   phone-number:
     edition: standard

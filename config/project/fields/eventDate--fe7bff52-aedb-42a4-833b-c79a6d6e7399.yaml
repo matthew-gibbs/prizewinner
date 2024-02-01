@@ -1,16 +1,16 @@
-columnSuffix: colipdjq
+columnSuffix: ofuuqoue
 contentColumnType: datetime
-fieldGroup: add9492e-039a-4123-9743-52385ce5f8bf # Statuses
-handle: shippedDate
-instructions: 'Probably today! '
-name: 'Shipped Date'
+fieldGroup: cfeacee4-e635-4538-b401-e51f25757d68 # Prizes
+handle: eventDate
+instructions: null
+name: 'Event Date'
 searchable: false
 settings:
   max: null
   min: '2024-01-01T00:00:00+00:00'
   minuteIncrement: 30
   showDate: true
-  showTime: true
+  showTime: false
   showTimeZone: false
 translationKeyFormat: null
 translationMethod: none
